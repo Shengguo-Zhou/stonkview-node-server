@@ -8,6 +8,7 @@ import GoldUserController from "./controllers/users/users-gold-controller.js"
 import AdminUserController from "./controllers/users/users-admin-controller.js"
 import SessionController from "./controllers/session/session-controller.js";
 import FollowsController from "./controllers/follows/follows-controller.js";
+import BlogController from "./controllers/blogs/blogs-controller.js";
 
 
 const CONNECTION_STRING = 'mongodb://localhost:27017/stonkview'
@@ -35,6 +36,7 @@ AdminUserController(app)
 SessionController(app)
 ProfileController(app)
 FollowsController(app)
+BlogController(app)
 
 app.listen(process.env.PORT ||4000)
 
