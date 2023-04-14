@@ -11,14 +11,14 @@ import FollowsController from "./controllers/follows/follows-controller.js";
 import BlogController from "./controllers/blogs/blogs-controller.js";
 
 
-const CONNECTION_STRING = 'mongodb://localhost:27017/stonkview'
+const CONNECTION_STRING = 'mongodb://127.0.0.1:27017/stonkview'
 mongoose.connect(CONNECTION_STRING).then(() => console.log('Successfully connected to DB!') );
 
 const app = express()
 
 app.use(cors({
   credentials: true,
-  origin: 'http://localhost:3000'
+  origin: ' http://localhost:3000'
 }))
 
 app.use(session({

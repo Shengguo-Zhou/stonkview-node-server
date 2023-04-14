@@ -1,8 +1,8 @@
 import mongoose from 'mongoose';
 
 const blogSchema = new mongoose.Schema({
-  username: String,
+  blogUsername: String,
   content: String,
-}, {collection: 'blogs'});
+}, {versionKey: false, collection: 'blogs'});
 
 export default blogSchema;
